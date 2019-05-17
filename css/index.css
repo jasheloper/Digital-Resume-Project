@@ -191,7 +191,7 @@ body {
 }
 @media (max-width: 500px) {
   .container {
-    width: 400px;
+    width: 460px;
   }
 }
 .container nav {
@@ -299,6 +299,11 @@ body {
     box-shadow: inset -21px 74px 288px -200px #c7c7c7;
   }
 }
+@media (max-width: 600px) and (max-width: 500px) {
+  .container .mobile-title2 {
+    display: none;
+  }
+}
 .ahandwriting {
   font-family: 'PT Mono', monospace;
 }
@@ -344,7 +349,7 @@ button:hover {
   width: 50%;
 }
 @media (max-width: 500px) {
-  width: 400px;
+  width: 350px;
 }
 @media (max-width: 600px) {
   padding: 1.4rem;
@@ -383,7 +388,6 @@ button:hover {
 }
 @media (max-width: 500px) {
   .first-section {
-    width: 400px;
     flex-direction: column;
     align-items: center;
   }
@@ -394,7 +398,7 @@ button:hover {
 }
 @media (max-width: 500px) {
   .first-section .first-section-box {
-    width: 600px;
+    width: 430px;
   }
 }
 @media (max-width: 800px) {
@@ -428,10 +432,16 @@ button:hover {
   -moz-box-shadow: inset 1px -103px 154px -200px #d9be50;
   box-shadow: inset 1px -103px 154px -200px #d9be50;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   .first-section .summary {
-    padding: 1.4rem;
-    width: 400px;
+    padding-top: 1.4rem;
+    width: 600px;
+  }
+}
+@media (max-width: 700px) {
+  .first-section .summary {
+    padding-top: 1.4rem;
+    width: 600px;
   }
 }
 @media (max-width: 600px) {
@@ -441,14 +451,25 @@ button:hover {
   }
 }
 @media (max-width: 500px) {
+  .first-section .summary {
+    padding: 1.4rem;
+    width: 430px;
+  }
+}
+@media (max-width: 700px) {
   .first-section .expertise {
-    width: 400px;
+    width: 600px;
   }
 }
 @media (max-width: 600px) {
   .first-section .expertise {
     padding: 1.4rem;
     width: 440px;
+  }
+}
+@media (max-width: 500px) {
+  .first-section .expertise {
+    width: 340px;
   }
 }
 .first-section .skillsbox {
