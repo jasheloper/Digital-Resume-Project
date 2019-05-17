@@ -355,7 +355,7 @@ button:hover {
 /* Mixins - First Section */
 .firstsectionbox {
   margin: 0.5rem;
-  width: 50%;
+  width: 70%;
 }
 @media (max-width: 500px) {
   width: auto;
@@ -366,7 +366,8 @@ button:hover {
 }
 .theskillsbox {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   font-weight: bold;
@@ -403,7 +404,7 @@ button:hover {
 }
 .first-section .first-section-box {
   margin: 0.5rem;
-  width: 50%;
+  width: 70%;
 }
 @media (max-width: 500px) {
   .first-section .first-section-box {
@@ -434,6 +435,7 @@ button:hover {
   line-height: 2.4rem;
 }
 .first-section .summary {
+  width: auto;
   padding-left: 1rem;
   padding-right: 1rem;
   border: 1px solid #f7f6f2;
@@ -444,48 +446,45 @@ button:hover {
 @media (max-width: 800px) {
   .first-section .summary {
     padding-top: 1.4rem;
-    width: auto;
   }
 }
 @media (max-width: 700px) {
   .first-section .summary {
     padding-top: 1.4rem;
-    width: auto;
   }
 }
 @media (max-width: 600px) {
   .first-section .summary {
     padding: 1.4rem;
-    width: auto;
   }
 }
 @media (max-width: 500px) {
   .first-section .summary {
     padding: 1.4rem;
-    width: auto;
   }
+}
+.first-section .expertise {
+  width: auto;
 }
 @media (max-width: 700px) {
   .first-section .expertise {
     padding-top: 1rem;
-    width: auto;
   }
 }
 @media (max-width: 600px) {
   .first-section .expertise {
     padding-top: 1rem;
-    width: auto;
   }
 }
 @media (max-width: 500px) {
   .first-section .expertise {
     padding-top: 1rem;
-    width: auto;
   }
 }
 .first-section .skillsbox {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   font-weight: bold;
