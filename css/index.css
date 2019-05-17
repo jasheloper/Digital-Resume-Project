@@ -475,7 +475,7 @@ button:hover {
 }
 .first-section .summary .samples {
   padding: 1em;
-  width: auto;
+  width: 400px;
   height: auto;
   margin: auto;
   display: inline-block;
@@ -485,10 +485,9 @@ button:hover {
 .first-section .summary .caption {
   display: block;
   border-radius: 1rem;
-  background: #eeedec;
-  border: 2px solid #dadada;
   padding: 1em;
   text-align: center;
+  line-height: 1.8;
 }
 .first-section .expertise {
   width: auto;
