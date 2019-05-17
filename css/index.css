@@ -205,6 +205,13 @@ body {
     text-align: center;
   }
 }
+@media (max-width: 600px) {
+  .container nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+}
 .container .nav-item {
   display: inline-block;
   margin: 0.8rem;
@@ -253,11 +260,33 @@ body {
     display: none;
   }
 }
+@media (max-width: 600px) {
+  .container .title {
+    display: none;
+  }
+}
 .container .mobile-title {
   display: none;
 }
 @media (max-width: 500px) {
   .container .mobile-title {
+    display: block;
+    padding: 1rem;
+    line-height: 2.5rem;
+    border-bottom: 5px solid lightgray;
+    /* background: rgb(101, 171, 189);  */
+    /* border: 4px solid rgb(129, 204, 223); */
+    text-align: center;
+    -webkit-box-shadow: inset -21px 74px 288px -200px #c7c7c7;
+    -moz-box-shadow: inset -21px 74px 288px -200px #c7c7c7;
+    box-shadow: inset -21px 74px 288px -200px #c7c7c7;
+  }
+}
+.container .mobile-title2 {
+  display: none;
+}
+@media (max-width: 600px) {
+  .container .mobile-title2 {
     display: block;
     padding: 1rem;
     line-height: 2.5rem;
@@ -316,6 +345,10 @@ button:hover {
 }
 @media (max-width: 500px) {
   width: 400px;
+}
+@media (max-width: 600px) {
+  padding: 1.4rem;
+  width: 440px;
 }
 .theskillsbox {
   display: flex;
@@ -401,9 +434,21 @@ button:hover {
     width: 400px;
   }
 }
+@media (max-width: 600px) {
+  .first-section .summary {
+    padding: 1.4rem;
+    width: 430px;
+  }
+}
 @media (max-width: 500px) {
   .first-section .expertise {
     width: 400px;
+  }
+}
+@media (max-width: 600px) {
+  .first-section .expertise {
+    padding: 1.4rem;
+    width: 440px;
   }
 }
 .first-section .skillsbox {
@@ -465,7 +510,7 @@ button:hover {
 .education p {
   border-bottom: 1px solid #ebeaea;
   padding-bottom: 1rem;
-  line-height: 1.7;
+  line-height: 1.9;
 }
 /* Work History */
 .work-history {
