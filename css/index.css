@@ -180,7 +180,7 @@ body {
   border-bottom: 1px dashed #3fb3b3;
 }
 .aparagraph {
-  line-height: 1.8rem;
+  line-height: 2.4rem;
 }
 .container {
   max-width: 800px;
@@ -431,7 +431,7 @@ button:hover {
   color: #3fb3b3;
 }
 .first-section p {
-  line-height: 1.8rem;
+  line-height: 2.4rem;
 }
 .first-section .summary {
   padding-left: 1rem;
@@ -578,7 +578,7 @@ button:hover {
   text-align: center;
 }
 .work-history p {
-  line-height: 1.8rem;
+  line-height: 2.4rem;
   padding: 1rem;
 }
 footer {
