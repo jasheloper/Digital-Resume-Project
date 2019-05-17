@@ -57,3 +57,220 @@ html, body {
     height: 100%;
 }
 
+
+/* Variables */
+
+
+@black-color: black; 
+
+@header-theme: rgb(14, 14, 14); 
+
+@main-color: rgb(36, 35, 36); 
+
+@skills: rgb(46, 46, 46); 
+
+@skillsalt: lightgrey; 
+
+@popofcolor: rgb(63, 179, 179); 
+
+@karla-font: 'Karla', sans-serif;
+
+@head-font: 'PT Mono', monospace;
+
+@handwriting: 'Grand Hotel', cursive;
+
+@handwriing2: 'Pacifico', cursive;
+
+
+
+/* Mixins */
+
+.h1header {
+	font-size: 3.8rem;
+	font-family: @karla-font;
+	color: @header-theme;
+	text-align: center; 
+}
+
+.h2header {
+	padding-bottom: 1.9rem; 
+	font-family: @head-font;
+	font-size: 1rem;
+	color: @black-color;
+	text-align: center; 
+}
+
+.h3header {
+	line-height: 5rem; 
+	font-size: 3rem;
+	font-family: @handwriting;
+	color: @popofcolor;
+	text-align: center; 
+}
+
+.h4header {
+	line-height: 5rem; 
+	font-size: 3rem;
+	text-align: center; 
+	font-family: @handwriting;
+	color: @popofcolor;
+}
+
+.aparagraph {
+	line-height: 1.8rem; 
+}
+
+
+
+
+
+.container {
+	max-width: 60%;
+	margin: 0 auto;
+	padding: 2% 1.25%;
+	font-family: @karla-font;
+
+	nav {
+		padding: 1rem;
+		text-align: right;
+	}
+		nav a {
+			padding: 1rem;
+			text-decoration: none; 
+			color: @black-color;
+		}
+		nav a:hover {
+			color: @main-color;
+		}
+
+	img {
+		width: 240px;
+		height: 280px;
+		padding: .5rem;
+		border-radius: 3rem;
+	}
+
+	.title {
+		line-height: 1.7;
+		border-bottom: .1rem solid rgb(199, 197, 197);
+		text-align: center; 
+	}
+
+	.ahandwriting {
+		font-family: @handwriing2;
+	}
+
+	.tagline {
+		padding-top: 1.2rem;
+		padding-bottom: 1rem; 
+		line-height: 2.8;
+		text-align: center;
+	}
+
+	h1 {
+		.h1header();
+	}
+
+	h2 {
+		.h2header();
+	}
+
+	button {
+		padding: 1.2rem;
+		width: 140px;
+		border-radius: .3rem;
+	}
+}
+
+
+
+
+
+/* Mixins - First Section */
+
+.firstsectionbox {
+	margin: .5rem;
+	width: 50%;
+}
+
+.theskillsbox {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.abox {
+	width: 70%;
+	padding: 1.4rem;
+	background-color: @skills;
+	text-align: center;
+}
+
+.analtbox {
+	background-color: @skillsalt;
+}
+
+
+
+/* First Section */
+
+.first-section {
+	display: flex;
+	padding-bottom: 3rem;
+
+	.first-section-box {
+		.firstsectionbox();
+
+	}
+
+	h3 {
+		.h3header();
+}
+	h4 {
+		.h4header();
+	}
+
+	p {
+		.aparagraph();
+	}
+
+	.skillsbox {
+		.theskillsbox();
+	}
+
+	.box {
+		.abox();
+	}
+
+	.altbox {
+		.analtbox();
+	}
+
+}
+
+.work-history {
+
+		padding: 1.3rem;
+		border-top: 1px dashed lightgrey;
+
+	 	h4 {
+			 .h4header();
+		 }
+
+}
+
+
+
+
+footer {
+	padding: 3rem;
+	text-align: center;
+}
+
+
+
+
+
+
+
