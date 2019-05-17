@@ -227,6 +227,27 @@ html, body {
 		-moz-box-shadow: inset -21px 74px 288px -200px rgba(199,199,199,1);
 		box-shadow: inset -21px 74px 288px -200px rgba(199,199,199,1);
 		}
+
+		.tablet-title {
+			display: none;
+		
+
+		@media (max-width: 800px){
+			display: block; 
+			padding: 1rem; 
+			max-width: 500px;
+			line-height: 2.5rem;
+		border-bottom: 5px solid lightgray;
+		/* background: rgb(101, 171, 189);  */
+		/* border: 4px solid rgb(129, 204, 223); */
+		text-align: center; 
+		-webkit-box-shadow: inset -21px 74px 288px -200px rgba(199,199,199,1);
+		-moz-box-shadow: inset -21px 74px 288px -200px rgba(199,199,199,1);
+		box-shadow: inset -21px 74px 288px -200px rgba(199,199,199,1);
+		}
+
+
+		}
 	}
 
 	.ahandwriting {
@@ -315,11 +336,20 @@ box-shadow: inset 200px -15px 136px -170px rgba(255,223,42,1);
 		align-items: center; 
 	}
 
+	@media (max-width:800px) {
+		padding-top: 0;
+		flex-direction: column;
+		align-items: center; 
+	}
+
 	.first-section-box {
 		.firstsectionbox();
 
 		@media (max-width:500px) {
 			width: 400px;
+		}
+		@media (max-width:800px) {
+			width: 700px;
 		}
 	}
 
