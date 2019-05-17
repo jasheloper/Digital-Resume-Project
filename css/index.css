@@ -479,8 +479,7 @@ button:hover {
   }
 }
 .first-section .summary .samples {
-  padding: 1em;
-  width: 380px;
+  width: 370px;
   height: auto;
   margin: auto;
   display: inline-block;
