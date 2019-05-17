@@ -371,12 +371,12 @@ body {
 }
 @media (max-width: 500px) {
   .first-section .first-section-box {
-    width: 400px;
+    width: 500px;
   }
 }
 @media (max-width: 800px) {
   .first-section .first-section-box {
-    width: 700px;
+    width: 600px;
   }
 }
 .first-section h3 {
@@ -403,6 +403,16 @@ body {
   -webkit-box-shadow: inset 1px -103px 154px -200px #d9be50;
   -moz-box-shadow: inset 1px -103px 154px -200px #d9be50;
   box-shadow: inset 1px -103px 154px -200px #d9be50;
+}
+@media (max-width: 500px) {
+  .first-section .summary {
+    width: 400px;
+  }
+}
+@media (max-width: 500px) {
+  .first-section .expertise {
+    width: 400px;
+  }
 }
 .first-section .skillsbox {
   display: flex;
