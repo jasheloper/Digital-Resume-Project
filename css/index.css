@@ -194,6 +194,12 @@ body {
     width: auto;
   }
 }
+.container a {
+  color: #3fb3b3;
+}
+.container a:hover {
+  color: #c2a42e;
+}
 .container nav {
   padding: 1rem;
   text-align: right;
@@ -466,6 +472,23 @@ button:hover {
   .first-section .summary {
     padding: 1.4rem;
   }
+}
+.first-section .summary .samples {
+  padding: 1em;
+  width: auto;
+  height: auto;
+  margin: auto;
+  display: inline-block;
+  border-radius: 0;
+  border: 2px solid #e4e3e3;
+}
+.first-section .summary .caption {
+  display: block;
+  border-radius: 1rem;
+  background: #eeedec;
+  border: 2px solid #dadada;
+  padding: 1em;
+  text-align: center;
 }
 .first-section .expertise {
   width: auto;
