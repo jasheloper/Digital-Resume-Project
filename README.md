@@ -1,3 +1,23 @@
+# Project Details
+
+<b>Objectives:</b><br />
+Student will build a digital resume from scratch and implement variables, mixins, nesting, nested at-rules in LESS.
+
+*Completed all Minimal Viable Project Tasks*
+
+<strong>Stretch Tasks:</strong><br />
+- Added links in the navigation
+
+
+<a href="http://jasheletillman.me/resume/"><img src="images/resume.png" alt=""></a>
+<br /><br />
+
+
+# Contact Me
+<a href="http://jasheletillman.me/" target=_blank>Portfolio</a> • <a href="https://www.linkedin.com/in/jashelet/" target=_blank>LinkedIn</a> • <a href="https://twitter.com/jasheloper" target=_blank>Twitter</a> • <a href="https://www.instagram.com/jasheloper/" target=_blank>Instagram</a> • <a href="mailto:jftjashele@gmail.com" target=_blank>E-mail</a> 
+<br /><br />
+
+
 # Preprocessing I: Digital Resume
 
 For this project you will be building a digital resume from scratch. You will be required to use specific preprocessing skills to accomplish your tasks.  
