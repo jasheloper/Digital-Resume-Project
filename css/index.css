@@ -394,14 +394,14 @@ button:hover {
 }
 @media (max-width: 800px) {
   .first-section {
-    padding-top: 1rem;
+    padding-top: 0;
     flex-direction: column;
     align-items: center;
   }
 }
 @media (max-width: 500px) {
   .first-section {
-    padding-top: 1rem;
+    padding-top: 0;
     flex-direction: column;
     align-items: center;
   }
