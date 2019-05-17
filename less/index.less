@@ -155,8 +155,15 @@ html, body {
 		padding: 1rem;
 		text-align: right;
 	}
-		nav a {
+
+		.nav-item {
+			display: inline-block;
+			margin: .8rem; 
 			padding: 1rem;
+			border-radius: 1rem; 
+		}
+		nav a {
+	
 			text-decoration: none; 
 			color: @black-color;
 		}
@@ -167,18 +174,22 @@ html, body {
 	img {
 		display: block; 
 		margin: auto; 
-		width: 200px;
-		height: 230px;
+		width: 180px;
+		height: 200px;
 		padding: .5rem;
-		border-radius: 3rem;
+		border-radius: 50%;
 	}
 
 	.title {
 		padding: 1rem; 
+		border-bottom: 5px solid lightgray;
 		/* background: rgb(101, 171, 189);  */
 		/* border: 4px solid rgb(129, 204, 223); */
-		border-bottom: 4px solid rgb(175, 173, 173); 
 		text-align: center; 
+		-webkit-box-shadow: inset -21px 74px 288px -200px rgba(199,199,199,1);
+		-moz-box-shadow: inset -21px 74px 288px -200px rgba(199,199,199,1);
+		box-shadow: inset -21px 74px 288px -200px rgba(199,199,199,1);
+
 	}
 
 	.ahandwriting {
@@ -241,12 +252,16 @@ html, body {
 .abox {
 	width: 100%;
 	padding: 1.4rem;
-	background-color: @skills; 
-	text-align: center;
+	text-align: center; 
+	-webkit-box-shadow: inset 200px -15px 136px -170px rgba(255,223,42,1);
+-moz-box-shadow: inset 200px -15px 136px -170px rgba(255,223,42,1);
+box-shadow: inset 200px -15px 136px -170px rgba(255,223,42,1);
 }
 
 .analtbox {
-	background-color: @skillsalt;
+	 background-color: @skillsalt; 
+	 text-align: center; 
+	background-color: rgb(250, 243, 191);
 }
 
 
@@ -255,7 +270,7 @@ html, body {
 
 .first-section {
 	display: flex;
-	padding-top: 1rem; 
+	padding-top: 3rem; 
 
 	.first-section-box {
 		.firstsectionbox();
@@ -275,15 +290,30 @@ html, body {
 		.aparagraph();
 	}
 
+	.summary {
+		padding: 2rem;
+		border: 1px solid rgb(247, 246, 242);
+		-webkit-box-shadow: inset 1px -103px 154px -200px rgba(217,190,80,1);
+		-moz-box-shadow: inset 1px -103px 154px -200px rgba(217,190,80,1);
+		box-shadow: inset 1px -103px 154px -200px rgba(217,190,80,1);
+	}
+
+	.expertise {
+	
+	}
+
 	.skillsbox {
 		.theskillsbox();
 	}
 
 	.box {
+		font-family: @head-font;
+		color: rgb(82, 68, 6); 
 		.abox();
 	}
 
 	.altbox {
+		color: rgb(82, 68, 6); 
 		.analtbox();
 	}
 
@@ -295,12 +325,12 @@ html, body {
 
 .education {
 	padding: 1rem;
-	background-color: rgb(245, 247, 247); 
+	border: 1px solid rgb(247, 246, 242);
 	text-align: center; 
-	-webkit-box-shadow: inset 66px -19px 153px -157px rgba(0,0,0,0.75);
--moz-box-shadow: inset 66px -19px 153px -157px rgba(0,0,0,0.75);
-box-shadow: inset 66px -19px 153px -157px rgba(0,0,0,0.75);
-
+	-webkit-box-shadow: inset 155px 2px 252px -200px rgba(235,235,235,1);
+-moz-box-shadow: inset 155px 2px 252px -200px rgba(235,235,235,1);
+box-shadow: inset 155px 2px 252px -200px rgba(235,235,235,1);
+	
 	h4 {
 		.h4header();
 	}
@@ -328,14 +358,14 @@ box-shadow: inset 66px -19px 153px -157px rgba(0,0,0,0.75);
 
 .work-history {
 		padding: 1rem;
-		background-color: rgb(245, 247, 247); 
-		-webkit-box-shadow: inset -97px -31px 153px -157px rgba(0,0,0,0.75);
--moz-box-shadow: inset -97px -31px 153px -157px rgba(0,0,0,0.75);
-box-shadow: inset -97px -31px 153px -157px rgba(0,0,0,0.75);
+		border: 1px solid rgb(247, 246, 242);
+		-webkit-box-shadow: inset 124px -4px 154px -200px rgba(63,177,179,1);
+-moz-box-shadow: inset 124px -4px 154px -200px rgba(63,177,179,1);
+box-shadow: inset 124px -4px 154px -200px rgba(63,177,179,1);
 
 	 	h4 {
 			 .h4header();
-			 text-align: center; 
+			
 		 }
 
 		 h5 {
@@ -364,8 +394,12 @@ footer {
 	text-align: center;
 	text-transform: uppercase;
 	font-size: .8rem;
-	font-family: @head-font;
 	line-height: 2rem;
+}
+
+footer a {
+	text-decoration: none; 
+			color: @popofcolor;
 }
 
 
