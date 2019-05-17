@@ -67,6 +67,8 @@ html, body {
 
 @main-color: rgb(36, 35, 36); 
 
+@maincolor2: yellow; 
+
 @skills: rgb(250, 206, 60); 
 
 @skillsalt: rgb(252, 234, 173); 
@@ -143,7 +145,7 @@ html, body {
 
 
 .container {
-	max-width: 60%;
+	max-width: 68%;
 	margin: 0 auto;
 	padding: 2% 1.25%;
 	font-family: @karla-font;
@@ -159,7 +161,7 @@ html, body {
 			color: @black-color;
 		}
 		nav a:hover {
-			color: @main-color;
+			background-color: @maincolor2;
 		}
 
 	img {
@@ -172,29 +174,38 @@ html, body {
 	}
 
 	.title {
-		line-height: 1.7;
-		border-bottom: .1rem solid rgb(199, 197, 197);
+		padding: 1rem; 
+		/* background: rgb(101, 171, 189);  */
+		/* border: 4px solid rgb(129, 204, 223); */
+		border-bottom: 4px solid rgb(175, 173, 173); 
 		text-align: center; 
 	}
 
 	.ahandwriting {
-		font-family: @handwriing2;
+		font-family: @head-font;
 	}
 
 	.tagline {
-		padding-top: 1.2rem;
-		padding-bottom: 1rem; 
-		line-height: 2.8;
+		line-height: 1;
 		text-align: center;
-		font-size: 1.7rem;
+		font-size: 1.1rem;
+		color: rgb(109, 109, 109);
 	}
 
 	h1 {
 		.h1header();
+		color: @popofcolor; 
+		line-height: 4rem;
+
+
 	}
 
 	h2 {
 		.h2header();
+		padding-top: 1rem;
+		padding-bottom: 1.8rem;
+		font-weight: bold;
+		font-size: 1.5rem; 
 	}
 
 	button {
@@ -230,7 +241,7 @@ html, body {
 .abox {
 	width: 100%;
 	padding: 1.4rem;
-	background-color: @skills;
+	background-color: @skills; 
 	text-align: center;
 }
 
@@ -244,9 +255,7 @@ html, body {
 
 .first-section {
 	display: flex;
-	padding: 1rem;
-	background-color: rgb(245, 247, 247); 
-	border: 2px solid rgb(216, 218, 218);
+	padding-top: 1rem; 
 
 	.first-section-box {
 		.firstsectionbox();
@@ -255,8 +264,10 @@ html, body {
 
 	h3 {
 		.h3header();
+		font-size: 2.7rem;
 }
 	h4 {
+
 		.h4header();
 	}
 
@@ -285,8 +296,10 @@ html, body {
 .education {
 	padding: 1rem;
 	background-color: rgb(245, 247, 247); 
-	border: 2px solid rgb(216, 218, 218);
 	text-align: center; 
+	-webkit-box-shadow: inset 66px -19px 153px -157px rgba(0,0,0,0.75);
+-moz-box-shadow: inset 66px -19px 153px -157px rgba(0,0,0,0.75);
+box-shadow: inset 66px -19px 153px -157px rgba(0,0,0,0.75);
 
 	h4 {
 		.h4header();
@@ -316,7 +329,9 @@ html, body {
 .work-history {
 		padding: 1rem;
 		background-color: rgb(245, 247, 247); 
-	border: 2px solid rgb(216, 218, 218);
+		-webkit-box-shadow: inset -97px -31px 153px -157px rgba(0,0,0,0.75);
+-moz-box-shadow: inset -97px -31px 153px -157px rgba(0,0,0,0.75);
+box-shadow: inset -97px -31px 153px -157px rgba(0,0,0,0.75);
 
 	 	h4 {
 			 .h4header();

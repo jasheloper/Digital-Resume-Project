@@ -183,7 +183,7 @@ body {
   line-height: 1.8rem;
 }
 .container {
-  max-width: 60%;
+  max-width: 68%;
   margin: 0 auto;
   padding: 2% 1.25%;
   font-family: 'Karla', sans-serif;
@@ -199,7 +199,7 @@ body {
   color: #3e3d3d;
 }
 .container nav a:hover {
-  color: #242324;
+  background-color: yellow;
 }
 .container img {
   display: block;
@@ -210,25 +210,28 @@ body {
   border-radius: 3rem;
 }
 .container .title {
-  line-height: 1.7;
-  border-bottom: 0.1rem solid #c7c5c5;
+  padding: 1rem;
+  /* background: rgb(101, 171, 189);  */
+  /* border: 4px solid rgb(129, 204, 223); */
+  border-bottom: 4px solid #afadad;
   text-align: center;
 }
 .container .ahandwriting {
-  font-family: 'Pacifico', cursive;
+  font-family: 'PT Mono', monospace;
 }
 .container .tagline {
-  padding-top: 1.2rem;
-  padding-bottom: 1rem;
-  line-height: 2.8;
+  line-height: 1;
   text-align: center;
-  font-size: 1.7rem;
+  font-size: 1.1rem;
+  color: #6d6d6d;
 }
 .container h1 {
   font-size: 3.8rem;
   font-family: 'Karla', sans-serif;
   color: #0e0e0e;
   text-align: center;
+  color: #3fb3b3;
+  line-height: 4rem;
 }
 .container h2 {
   padding-bottom: 1.9rem;
@@ -236,6 +239,10 @@ body {
   font-size: 1rem;
   color: #3e3d3d;
   text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1.8rem;
+  font-weight: bold;
+  font-size: 1.5rem;
 }
 .container button {
   background-color: #3fb3b3;
@@ -272,9 +279,7 @@ body {
 /* First Section */
 .first-section {
   display: flex;
-  padding: 1rem;
-  background-color: #f5f7f7;
-  border: 2px solid #d8dada;
+  padding-top: 1rem;
 }
 .first-section .first-section-box {
   margin: 0.5rem;
@@ -286,6 +291,7 @@ body {
   font-family: 'Grand Hotel', cursive;
   color: #3fb3b3;
   text-align: center;
+  font-size: 2.7rem;
 }
 .first-section h4 {
   line-height: 5rem;
@@ -317,8 +323,10 @@ body {
 .education {
   padding: 1rem;
   background-color: #f5f7f7;
-  border: 2px solid #d8dada;
   text-align: center;
+  -webkit-box-shadow: inset 66px -19px 153px -157px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: inset 66px -19px 153px -157px rgba(0, 0, 0, 0.75);
+  box-shadow: inset 66px -19px 153px -157px rgba(0, 0, 0, 0.75);
 }
 .education h4 {
   line-height: 5rem;
@@ -347,7 +355,9 @@ body {
 .work-history {
   padding: 1rem;
   background-color: #f5f7f7;
-  border: 2px solid #d8dada;
+  -webkit-box-shadow: inset -97px -31px 153px -157px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: inset -97px -31px 153px -157px rgba(0, 0, 0, 0.75);
+  box-shadow: inset -97px -31px 153px -157px rgba(0, 0, 0, 0.75);
 }
 .work-history h4 {
   line-height: 5rem;
