@@ -359,6 +359,7 @@ html, body {
 	justify-content: center;
 	align-items: center;
 	font-weight: bold;
+	line-height: 1.7;
 
 }
 
@@ -383,15 +384,18 @@ box-shadow: inset 200px -15px 136px -170px rgba(255,223,42,1);
 
 .first-section {
 	display: flex;
-	padding-top: 0;
+	margin: auto; 
+	padding-top: 2rem;
 
 	@media (max-width:800px) {
+		padding-top: 1rem;
 		flex-direction: column;
 		align-items: center; 
 	}
 
 
 	@media (max-width:500px) {
+		padding-top: 1rem;
 		flex-direction: column;
 		align-items: center; 
 	}
@@ -425,7 +429,7 @@ box-shadow: inset 200px -15px 136px -170px rgba(255,223,42,1);
 	}
 
 	.summary {
-		width: auto;
+		width: auto; 
 		padding-left: 1rem;
 		padding-right: 1rem;
 		border: 1px solid rgb(247, 246, 242);
