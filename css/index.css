@@ -136,6 +136,12 @@ body {
 }
 /* Variables */
 /* Mixins */
+.button {
+  background-color: #3fb3b3;
+  font-size: 0.9rem;
+  color: white;
+  border-radius: 10rem;
+}
 .h1header {
   font-size: 3.8rem;
   font-family: 'Karla', sans-serif;
@@ -146,7 +152,7 @@ body {
   padding-bottom: 1.9rem;
   font-family: 'PT Mono', monospace;
   font-size: 1rem;
-  color: black;
+  color: #3e3d3d;
   text-align: center;
 }
 .h3header {
@@ -163,6 +169,16 @@ body {
   font-family: 'Grand Hotel', cursive;
   color: #3fb3b3;
 }
+.h5header {
+  padding-bottom: 0.6rem;
+  font-size: 1.7rem;
+}
+.h6header {
+  padding-bottom: 1rem;
+  font-family: 'PT Mono', monospace;
+  font-size: 1rem;
+  border-bottom: 1px dashed #3fb3b3;
+}
 .aparagraph {
   line-height: 1.8rem;
 }
@@ -171,6 +187,7 @@ body {
   margin: 0 auto;
   padding: 2% 1.25%;
   font-family: 'Karla', sans-serif;
+  color: #3e3d3d;
 }
 .container nav {
   padding: 1rem;
@@ -179,14 +196,16 @@ body {
 .container nav a {
   padding: 1rem;
   text-decoration: none;
-  color: black;
+  color: #3e3d3d;
 }
 .container nav a:hover {
   color: #242324;
 }
 .container img {
-  width: 240px;
-  height: 280px;
+  display: block;
+  margin: auto;
+  width: 200px;
+  height: 230px;
   padding: 0.5rem;
   border-radius: 3rem;
 }
@@ -203,6 +222,7 @@ body {
   padding-bottom: 1rem;
   line-height: 2.8;
   text-align: center;
+  font-size: 1.7rem;
 }
 .container h1 {
   font-size: 3.8rem;
@@ -214,13 +234,19 @@ body {
   padding-bottom: 1.9rem;
   font-family: 'PT Mono', monospace;
   font-size: 1rem;
-  color: black;
+  color: #3e3d3d;
   text-align: center;
 }
 .container button {
+  background-color: #3fb3b3;
+  font-size: 0.9rem;
+  color: white;
+  border-radius: 10rem;
   padding: 1.2rem;
   width: 140px;
-  border-radius: 0.3rem;
+}
+.container button:hover {
+  background-color: #dfc60a;
 }
 /* Mixins - First Section */
 .firstsectionbox {
@@ -232,20 +258,23 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-weight: bold;
 }
 .abox {
-  width: 70%;
+  width: 100%;
   padding: 1.4rem;
-  background-color: #2e2e2e;
+  background-color: #face3c;
   text-align: center;
 }
 .analtbox {
-  background-color: lightgrey;
+  background-color: #fceaad;
 }
 /* First Section */
 .first-section {
   display: flex;
-  padding-bottom: 3rem;
+  padding: 1rem;
+  background-color: #f5f7f7;
+  border: 2px solid #d8dada;
 }
 .first-section .first-section-box {
   margin: 0.5rem;
@@ -273,28 +302,82 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-weight: bold;
 }
 .first-section .box {
-  width: 70%;
+  width: 100%;
   padding: 1.4rem;
-  background-color: #2e2e2e;
+  background-color: #face3c;
   text-align: center;
 }
 .first-section .altbox {
-  background-color: lightgrey;
+  background-color: #fceaad;
 }
-.work-history {
-  padding: 1.3rem;
-  border-top: 1px dashed lightgrey;
+/* Education */
+.education {
+  padding: 1rem;
+  background-color: #f5f7f7;
+  border: 2px solid #d8dada;
+  text-align: center;
 }
-.work-history h4 {
+.education h4 {
   line-height: 5rem;
   font-size: 3rem;
   text-align: center;
   font-family: 'Grand Hotel', cursive;
   color: #3fb3b3;
 }
+.education h5 {
+  padding-bottom: 0.6rem;
+  font-size: 1.7rem;
+  padding-bottom: 1rem;
+}
+.education h6 {
+  padding-bottom: 1rem;
+  font-family: 'PT Mono', monospace;
+  font-size: 1rem;
+  border-bottom: 1px dashed #3fb3b3;
+  border: none;
+}
+.education p {
+  padding-bottom: 1rem;
+  line-height: 1.7;
+}
+/* Work History */
+.work-history {
+  padding: 1rem;
+  background-color: #f5f7f7;
+  border: 2px solid #d8dada;
+}
+.work-history h4 {
+  line-height: 5rem;
+  font-size: 3rem;
+  font-family: 'Grand Hotel', cursive;
+  color: #3fb3b3;
+  text-align: center;
+}
+.work-history h5 {
+  padding-bottom: 0.6rem;
+  font-size: 1.7rem;
+  padding-top: 2rem;
+  text-align: center;
+}
+.work-history h6 {
+  padding-bottom: 1rem;
+  font-family: 'PT Mono', monospace;
+  font-size: 1rem;
+  border-bottom: 1px dashed #3fb3b3;
+  text-align: center;
+}
+.work-history p {
+  line-height: 1.8rem;
+  padding: 1rem;
+}
 footer {
   padding: 3rem;
   text-align: center;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-family: 'PT Mono', monospace;
+  line-height: 2rem;
 }

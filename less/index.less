@@ -61,15 +61,15 @@ html, body {
 /* Variables */
 
 
-@black-color: black; 
+@black-color: rgb(62, 61, 61); 
 
 @header-theme: rgb(14, 14, 14); 
 
 @main-color: rgb(36, 35, 36); 
 
-@skills: rgb(46, 46, 46); 
+@skills: rgb(250, 206, 60); 
 
-@skillsalt: lightgrey; 
+@skillsalt: rgb(252, 234, 173); 
 
 @popofcolor: rgb(63, 179, 179); 
 
@@ -84,6 +84,13 @@ html, body {
 
 
 /* Mixins */
+
+.button {
+	background-color: @popofcolor;
+	font-size: .9rem;
+	color: white;
+	border-radius: 10rem;
+}
 
 .h1header {
 	font-size: 3.8rem;
@@ -116,6 +123,17 @@ html, body {
 	color: @popofcolor;
 }
 
+.h5header {
+	padding-bottom: .6rem;
+	font-size: 1.7rem;
+}
+.h6header {
+	padding-bottom: 1rem;
+	font-family: @head-font;
+	font-size: 1rem;
+	border-bottom: 1px dashed @popofcolor;
+}
+
 .aparagraph {
 	line-height: 1.8rem; 
 }
@@ -129,6 +147,7 @@ html, body {
 	margin: 0 auto;
 	padding: 2% 1.25%;
 	font-family: @karla-font;
+	color: @black-color;
 
 	nav {
 		padding: 1rem;
@@ -144,8 +163,10 @@ html, body {
 		}
 
 	img {
-		width: 240px;
-		height: 280px;
+		display: block; 
+		margin: auto; 
+		width: 200px;
+		height: 230px;
 		padding: .5rem;
 		border-radius: 3rem;
 	}
@@ -165,6 +186,7 @@ html, body {
 		padding-bottom: 1rem; 
 		line-height: 2.8;
 		text-align: center;
+		font-size: 1.7rem;
 	}
 
 	h1 {
@@ -176,9 +198,13 @@ html, body {
 	}
 
 	button {
+		.button();
 		padding: 1.2rem;
 		width: 140px;
-		border-radius: .3rem;
+
+		&:hover {
+			background-color: rgb(223, 198, 10); 
+		}
 	}
 }
 
@@ -198,10 +224,11 @@ html, body {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	font-weight: bold;
 }
 
 .abox {
-	width: 70%;
+	width: 100%;
 	padding: 1.4rem;
 	background-color: @skills;
 	text-align: center;
@@ -217,7 +244,9 @@ html, body {
 
 .first-section {
 	display: flex;
-	padding-bottom: 3rem;
+	padding: 1rem;
+	background-color: rgb(245, 247, 247); 
+	border: 2px solid rgb(216, 218, 218);
 
 	.first-section-box {
 		.firstsectionbox();
@@ -249,13 +278,65 @@ html, body {
 
 }
 
-.work-history {
 
-		padding: 1.3rem;
-		border-top: 1px dashed lightgrey;
+
+/* Education */
+
+.education {
+	padding: 1rem;
+	background-color: rgb(245, 247, 247); 
+	border: 2px solid rgb(216, 218, 218);
+	text-align: center; 
+
+	h4 {
+		.h4header();
+	}
+
+	h5 {
+		.h5header();
+		padding-bottom: 1rem;
+	}
+
+	h6 {
+		.h6header();
+		border: none;
+	}
+
+	p {
+		padding-bottom: 1rem;
+		line-height: 1.7; 
+	}
+}
+
+
+
+
+/* Work History */
+
+.work-history {
+		padding: 1rem;
+		background-color: rgb(245, 247, 247); 
+	border: 2px solid rgb(216, 218, 218);
 
 	 	h4 {
 			 .h4header();
+			 text-align: center; 
+		 }
+
+		 h5 {
+			 .h5header();
+			 padding-top: 2rem; 
+			 text-align: center; 
+		 }
+
+		 h6 {
+			 .h6header();
+			 text-align: center; 
+		 }
+
+		 p {
+			 .aparagraph();
+			 padding: 1rem;
 		 }
 
 }
@@ -266,6 +347,10 @@ html, body {
 footer {
 	padding: 3rem;
 	text-align: center;
+	text-transform: uppercase;
+	font-size: .8rem;
+	font-family: @head-font;
+	line-height: 2rem;
 }
 
 
