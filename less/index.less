@@ -170,6 +170,9 @@ html, body {
 			flex-direction: column;
 			text-align: center;
 		}
+
+	
+		
 	}
 
 
@@ -182,14 +185,26 @@ html, body {
 			@media (max-width: 500px){
 				border-bottom: 1px solid lightgrey;
 				border-radius: 0;
+
+				&:hover {
+					color: rgb(114, 186, 189);
+				}
 			}
 			@media (max-width: 600px){
 				border-bottom: 1px solid lightgrey;
 				border-radius: 0;
+
+				&:hover {
+					color: rgb(114, 186, 189);
+				}
 			}
+
+			&:hover {
+				background-color: @maincolor2;
+			}
+
 		}
 		nav a {
-	
 			text-decoration: none; 
 			color: @black-color;
 		}
@@ -444,15 +459,17 @@ box-shadow: inset 200px -15px 136px -170px rgba(255,223,42,1);
 	.expertise {
 
 		@media (max-width:700px) {
+			padding-top: 1rem;
 			width: auto;
 		}
 
 		@media (max-width:600px) {
-			padding: 1.4rem;
+			padding-top: 1rem;
 			width: auto;
 
 		}
 		@media (max-width:500px) {
+			padding-top: 1rem;
 			width: auto;
 
 		}

@@ -223,12 +223,21 @@ body {
     border-bottom: 1px solid lightgrey;
     border-radius: 0;
   }
+  .container .nav-item:hover {
+    color: #72babd;
+  }
 }
 @media (max-width: 600px) {
   .container .nav-item {
     border-bottom: 1px solid lightgrey;
     border-radius: 0;
   }
+  .container .nav-item:hover {
+    color: #72babd;
+  }
+}
+.container .nav-item:hover {
+  background-color: yellow;
 }
 .container nav a {
   text-decoration: none;
@@ -458,17 +467,19 @@ button:hover {
 }
 @media (max-width: 700px) {
   .first-section .expertise {
+    padding-top: 1rem;
     width: auto;
   }
 }
 @media (max-width: 600px) {
   .first-section .expertise {
-    padding: 1.4rem;
+    padding-top: 1rem;
     width: auto;
   }
 }
 @media (max-width: 500px) {
   .first-section .expertise {
+    padding-top: 1rem;
     width: auto;
   }
 }
