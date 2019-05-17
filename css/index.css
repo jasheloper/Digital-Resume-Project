@@ -191,7 +191,7 @@ body {
 }
 @media (max-width: 500px) {
   .container {
-    width: 460px;
+    width: auto;
   }
 }
 .container nav {
@@ -349,11 +349,11 @@ button:hover {
   width: 50%;
 }
 @media (max-width: 500px) {
-  width: 350px;
+  width: auto;
 }
 @media (max-width: 600px) {
   padding: 1.4rem;
-  width: 440px;
+  width: auto;
 }
 .theskillsbox {
   display: flex;
@@ -435,41 +435,41 @@ button:hover {
 @media (max-width: 800px) {
   .first-section .summary {
     padding-top: 1.4rem;
-    width: 730px;
+    width: auto;
   }
 }
 @media (max-width: 700px) {
   .first-section .summary {
     padding-top: 1.4rem;
-    width: 630px;
+    width: auto;
   }
 }
 @media (max-width: 600px) {
   .first-section .summary {
     padding: 1.4rem;
-    width: 530px;
+    width: auto;
   }
 }
 @media (max-width: 500px) {
   .first-section .summary {
     padding: 1.4rem;
-    width: 440px;
+    width: auto;
   }
 }
 @media (max-width: 700px) {
   .first-section .expertise {
-    width: 600px;
+    width: auto;
   }
 }
 @media (max-width: 600px) {
   .first-section .expertise {
     padding: 1.4rem;
-    width: 440px;
+    width: auto;
   }
 }
 @media (max-width: 500px) {
   .first-section .expertise {
-    width: 440px;
+    width: auto;
   }
 }
 .first-section .skillsbox {
