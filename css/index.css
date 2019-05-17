@@ -482,6 +482,11 @@ button:hover {
   border-radius: 0;
   border: 2px solid #e4e3e3;
 }
+@media (max-width: 400px) {
+  .first-section .summary .samples {
+    width: 200px;
+  }
+}
 .first-section .summary .caption {
   display: block;
   border-radius: 1rem;
