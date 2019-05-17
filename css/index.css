@@ -205,13 +205,6 @@ body {
     text-align: center;
   }
 }
-@media (max-width: 600px) {
-  .container nav {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-  }
-}
 .container .nav-item {
   display: inline-block;
   margin: 0.8rem;
@@ -321,6 +314,9 @@ button:hover {
   margin: 0.5rem;
   width: 50%;
 }
+@media (max-width: 500px) {
+  width: 400px;
+}
 .theskillsbox {
   display: flex;
   flex-direction: column;
@@ -344,18 +340,17 @@ button:hover {
 /* First Section */
 .first-section {
   display: flex;
-  padding-top: 3rem;
+  padding-top: 0;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   .first-section {
-    padding-top: 0;
     flex-direction: column;
     align-items: center;
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 500px) {
   .first-section {
-    padding-top: 0;
+    width: 400px;
     flex-direction: column;
     align-items: center;
   }
@@ -366,12 +361,12 @@ button:hover {
 }
 @media (max-width: 500px) {
   .first-section .first-section-box {
-    width: 500px;
+    width: 600px;
   }
 }
 @media (max-width: 800px) {
   .first-section .first-section-box {
-    width: 600px;
+    width: 700px;
   }
 }
 .first-section h3 {
@@ -393,7 +388,8 @@ button:hover {
   line-height: 1.8rem;
 }
 .first-section .summary {
-  padding: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   border: 1px solid #f7f6f2;
   -webkit-box-shadow: inset 1px -103px 154px -200px #d9be50;
   -moz-box-shadow: inset 1px -103px 154px -200px #d9be50;
@@ -401,22 +397,13 @@ button:hover {
 }
 @media (max-width: 500px) {
   .first-section .summary {
+    padding: 1.4rem;
     width: 400px;
-  }
-}
-@media (max-width: 600px) {
-  .first-section .summary {
-    width: 460px;
   }
 }
 @media (max-width: 500px) {
   .first-section .expertise {
     width: 400px;
-  }
-}
-@media (max-width: 600px) {
-  .first-section .expertise {
-    width: 460px;
   }
 }
 .first-section .skillsbox {
@@ -451,6 +438,11 @@ button:hover {
   -moz-box-shadow: inset 155px 2px 252px -200px #ebebeb;
   box-shadow: inset 155px 2px 252px -200px #ebebeb;
 }
+@media (max-width: 500px) {
+  .education {
+    padding: 1rem;
+  }
+}
 .education h4 {
   line-height: 5rem;
   font-size: 3rem;
@@ -482,6 +474,11 @@ button:hover {
   -webkit-box-shadow: inset 124px -4px 154px -200px #3fb1b3;
   -moz-box-shadow: inset 124px -4px 154px -200px #3fb1b3;
   box-shadow: inset 124px -4px 154px -200px #3fb1b3;
+}
+@media (max-width: 500px) {
+  .work-history {
+    padding: 1rem;
+  }
 }
 .work-history h4 {
   line-height: 5rem;

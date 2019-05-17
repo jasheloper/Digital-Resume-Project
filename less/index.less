@@ -164,12 +164,6 @@ html, body {
 			flex-direction: column;
 			text-align: center;
 		}
-
-		@media (max-width: 600px){
-			display: flex;
-			flex-direction: column;
-			text-align: center;
-		}
 	}
 
 
@@ -297,6 +291,10 @@ html, body {
 	width: 50%;
 }
 
+@media(max-width: 500px) {
+	width: 400px;
+}
+
 .theskillsbox {
 	display: flex;
 	flex-direction: column;
@@ -326,28 +324,29 @@ box-shadow: inset 200px -15px 136px -170px rgba(255,223,42,1);
 
 .first-section {
 	display: flex;
-	padding-top: 3rem; 
-
-	@media (max-width:500px) {
-		padding-top: 0;
-		flex-direction: column;
-		align-items: center; 
-	}
+	padding-top: 0;
 
 	@media (max-width:800px) {
-		padding-top: 0;
 		flex-direction: column;
 		align-items: center; 
 	}
+
+	@media (max-width:500px) {
+		width: 400px;
+		flex-direction: column;
+		align-items: center; 
+	}
+
+
 
 	.first-section-box {
 		.firstsectionbox();
 
 		@media (max-width:500px) {
-			width: 500px;
+			width: 600px;
 		}
 		@media (max-width:800px) {
-			width: 600px;
+			width: 700px;
 		}
 	}
 
@@ -365,18 +364,17 @@ box-shadow: inset 200px -15px 136px -170px rgba(255,223,42,1);
 	}
 
 	.summary {
-		padding: 2rem;
+		padding-left: 1rem;
+		padding-right: 1rem;
 		border: 1px solid rgb(247, 246, 242);
 		-webkit-box-shadow: inset 1px -103px 154px -200px rgba(217,190,80,1);
 		-moz-box-shadow: inset 1px -103px 154px -200px rgba(217,190,80,1);
 		box-shadow: inset 1px -103px 154px -200px rgba(217,190,80,1);
 
 		@media (max-width:500px) {
-			width: 400px;
-		}
+			padding: 1.4rem;
+			width: 400px
 
-		@media (max-width:600px) {
-			width: 460px;
 		}
 
 	}
@@ -384,11 +382,10 @@ box-shadow: inset 200px -15px 136px -170px rgba(255,223,42,1);
 	.expertise {
 		@media (max-width:500px) {
 			width: 400px;
-		}
-		@media (max-width:600px) {
-			width: 460px;
+
 		}
 	}
+
 
 	.skillsbox {
 		.theskillsbox();
@@ -418,6 +415,10 @@ box-shadow: inset 200px -15px 136px -170px rgba(255,223,42,1);
 	-webkit-box-shadow: inset 155px 2px 252px -200px rgba(235,235,235,1);
 -moz-box-shadow: inset 155px 2px 252px -200px rgba(235,235,235,1);
 box-shadow: inset 155px 2px 252px -200px rgba(235,235,235,1);
+
+@media(max-width: 500px) {
+	padding: 1rem;
+}
 
 
 	
@@ -453,6 +454,10 @@ box-shadow: inset 155px 2px 252px -200px rgba(235,235,235,1);
 		-webkit-box-shadow: inset 124px -4px 154px -200px rgba(63,177,179,1);
 -moz-box-shadow: inset 124px -4px 154px -200px rgba(63,177,179,1);
 box-shadow: inset 124px -4px 154px -200px rgba(63,177,179,1);
+
+@media(max-width: 500px) {
+	padding: 1rem;
+}
 
 	 	h4 {
 			 .h4header();
