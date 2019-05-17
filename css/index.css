@@ -184,8 +184,9 @@ body {
 }
 .container {
   max-width: 800px;
-  margin: 0 auto;
-  padding: 2% 1.25%;
+  margin: auto;
+  /* margin: 0 auto;
+	padding: 2% 1.25%; */
   font-family: 'Karla', sans-serif;
   color: #3e3d3d;
 }
@@ -360,8 +361,10 @@ button:hover {
 }
 /* Mixins - First Section */
 .firstsectionbox {
-  margin: 0.5rem;
-  width: 70%;
+  margin: 0.3rem;
+  width: auto;
+  /* margin: .5rem;
+	width: 70%; /*/
 }
 @media (max-width: 500px) {
   width: auto;
@@ -413,8 +416,10 @@ button:hover {
   }
 }
 .first-section .first-section-box {
-  margin: 0.5rem;
-  width: 70%;
+  margin: 0.3rem;
+  width: auto;
+  /* margin: .5rem;
+	width: 70%; /*/
 }
 @media (max-width: 500px) {
   .first-section .first-section-box {
