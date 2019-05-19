@@ -219,6 +219,11 @@ body {
     text-align: center;
   }
 }
+@media (max-width: 700px) {
+  .container nav {
+    text-align: center;
+  }
+}
 .container .nav-item {
   display: inline-block;
   margin: 0.8rem;
@@ -241,6 +246,11 @@ body {
   }
   .container .nav-item:hover {
     background-color: #72babd;
+  }
+}
+@media (max-width: 700px) {
+  .container .nav-item {
+    padding: 0.7rem;
   }
 }
 .container .nav-item:hover {
