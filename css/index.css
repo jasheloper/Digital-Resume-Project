@@ -281,19 +281,23 @@ body {
   -webkit-box-shadow: inset -21px 74px 288px -200px #c7c7c7;
   -moz-box-shadow: inset -21px 74px 288px -200px #c7c7c7;
   box-shadow: inset -21px 74px 288px -200px #c7c7c7;
+  line-height: 2.5rem;
 }
 @media (max-width: 500px) {
   .container .title {
     display: none;
+    line-height: 2.5rem;
   }
 }
 @media (max-width: 600px) {
   .container .title {
     display: none;
+    line-height: 2.5rem;
   }
 }
 .container .mobile-title {
   display: none;
+  line-height: 2.5rem;
 }
 @media (max-width: 500px) {
   .container .mobile-title {
